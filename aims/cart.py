@@ -37,3 +37,5 @@ class Cart:
             print(f"{i}. DVD - {item.title} - {item.category} - {item.cost} $")
         print(f"Total cost: {self.total_cost():.2f} $")
         print("**************************************")
+
+print("another conflict")
