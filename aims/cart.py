@@ -37,5 +37,8 @@ class Cart:
             print(f"{i}. DVD - {item.title} - {item.category} - {item.cost} $")
         print(f"Total cost: {self.total_cost():.2f} $")
         print("**************************************")
-
-print("another conflict")
+   
+    def calculate_discount(self, total, percent):
+        if percent < 0 or percent > 100:
+            raise ValueError("Invalid discount percent")
+        return total * (100 - percent) / 100
