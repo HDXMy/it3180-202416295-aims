@@ -4,3 +4,4 @@
 
 - Sinh viên: Hoàng Đặng Xuân Mỹ – MSSV 202416295
 - Chạy chương trình: `python main.py`
+- Python 3.10+
