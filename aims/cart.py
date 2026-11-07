@@ -42,3 +42,14 @@ class Cart:
         if percent < 0 or percent > 100:
             raise ValueError("Invalid discount percent")
         return total * (100 - percent) / 100
+
+    def sort_by_title(self):
+        """Sắp xếp các sản phẩm trong giỏ hàng theo tiêu đề (title) tăng dần."""
+        # Giả sử mỗi item trong giỏ hàng có thuộc tính title hoặc đối tượng media có title
+        self.items.sort(key=lambda item: item.title)
+
+    def sort_by_cost(self):
+        """Sắp xếp các sản phẩm trong giỏ hàng theo giá tiền (cost/price) tăng dần."""
+        # Giả sử mỗi item có thuộc tính cost hoặc price
+        self.items.sort(key=lambda item: item.cost)
+    
